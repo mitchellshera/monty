@@ -80,11 +80,11 @@ stack_t *add_dnodeint(stack_t **head, const int n)
  */
 void free_dlistint(stack_t *head)
 {
-	stack_t *tmp;
+	stack_t *currentNode;
 
-	while ((tmp = head) != NULL)
+	while ((currentNode = head) != NULL)
 	{
 		head = head->next;
-		free(tmp);
+		free(currentNode);
 	}
 }
