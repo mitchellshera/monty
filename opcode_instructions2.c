@@ -195,6 +195,6 @@ void _sub(stack_t **doubly, unsigned int cline)
 	aux = (*doubly)->next;
 	aux->n -= (*doubly)->n;
 	_pop(doubly, cline);
-}
+
 
 >>>>>>> 72d246a106cbdbb5e0e2c5531fa3bcb900c6f8e8
