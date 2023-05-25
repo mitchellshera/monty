@@ -16,11 +16,11 @@ stack_t *add_dnodeint_end(stack_t **head, const int n)
 	if (!temp)
 	{
 		dprintf(2, "Error: malloc failed\n");
-		free_vglo();
+		free_myGlobals();
 		exit(EXIT_FAILURE);
 	}
 	temp->n = n;
-	/*Careful with the first time*/
+	/*Careful */
 	if (*head == NULL)
 	{
 		temp->next = *head;
@@ -53,11 +53,11 @@ stack_t *add_dnodeint(stack_t **head, const int n)
 	if (!temp)
 	{
 		dprintf(2, "Error: malloc failed\n");
-		free_vglo();
+		free_myGlobals();
 		exit(EXIT_FAILURE);
 	}
 	temp->n = n;
-	/*Careful with the first time*/
+	/*Careful*/
 	if (*head == NULL)
 	{
 		temp->next = *head;
